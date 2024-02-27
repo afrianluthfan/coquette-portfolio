@@ -1,0 +1,61 @@
+{
+  "nama": "afrian ",
+  "umur": "22",
+  "domisili": "bogor",
+
+  "asal_kampus": ["jurusan", "nama-kampus", "waktu di kampus ngapain aja"],
+
+  "strength": [
+    "etos kerja tinggi karena ada rasa beban tanggunjawab",
+    "problem solving dan kreatif",
+    "saya bisa berbahasa inggris dengan fasih"
+  ],
+
+  "weakness": [
+    "workaholic sampai lupa waktu, harus set alarm sebagai reminder",
+    "perfeksionis, pastikan goal/milestone yang harus dicapai",
+    "saya sulit menolak permintaan orang lain, harus belajar untuk mengatakan tidak"
+  ],
+
+  "expGen": ["kerja di mana aja"],
+  "expBidang": [
+    "project identify",
+    "project morowali",
+    "project mbp coal group",
+    "personal portfolio"
+  ],
+
+  "skillset": ["react", "typescript", "nodejs", "javascript"],
+
+  "pelatihan": ["dicoding"],
+
+  "postscript": "saya harap pengalaman yang saya niliki dapat berkontribusi keapda bank raya indonesia untuk posisi ini",
+  "ceritain kenapa pilih jurusan ini": "polish it up",
+
+  "whatDoYouKnow": [
+    "RISET DULU",
+    "PERUSAHAAN APA, DIDIRIKAN APA, PERUSAHAAN UNTUK APA, ADA BERAPA CABANG DI INDONESIA, JASA YANG DITAWARKAN APA AJA"
+  ],
+
+  "whyBRI": [
+    "saya melihat perusahaan ini berpotensi untuk saya mengembangkan diri, karena banyak membantu umkm untuk berkembang. dengan itu, maka perusahaan ini terbukti untuk memiliki network yang luas.",
+    "dapat info dari beberapa orang yang pernah kerja bahwa lingkungan kerjanya nyaman dan techstack yang digunakan juga beririsan dengan skillset yang saya miliki"
+  ],
+
+  "confidence": [
+    "overconfidence itu without analysis",
+    "confidence  itu dengan analysis"
+  ],
+
+  "idealCompany": [
+    "perusahaan yang memberikan ruang untuk berkembang, baik dari segi skillset maupun karir",
+    "perusahaan yang memiliki lingkungan kerja yang nyaman",
+    "perusahaan yang memiliki network yang luas"
+  ],
+
+  "gaji": [
+    "untuk posisi ini punya range x - y, tapi saya juga siap untuk mengikuti kebijakan perusahaan dalam perihal gaji"
+  ],
+
+  "questions": ["tahapannya ada apa lagi?", "hasilnya kapan?"]
+}
