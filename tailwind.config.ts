@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import { nextui } from "@nextui-org/react";
 
 const config: Config = {
   daisyui: {
@@ -8,11 +9,12 @@ const config: Config = {
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
       fontFamily: {
-        against: ["sgainst", "sans-serif"],
+        against: ["against", "sans-serif"],
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
@@ -21,6 +23,7 @@ const config: Config = {
       },
     },
   },
-  plugins: [require("daisyui")],
+  darkMode: "class",
+  plugins: [nextui(), require("daisyui")],
 };
 export default config;

@@ -16,7 +16,7 @@ const Decor: FC = () => {
     let asteriskLoop = gsap.fromTo(
       ".loopthis",
       { rotate: 0 },
-      { rotate: 360, repeat: -1, duration: 9, ease: "none", paused: true }
+      { rotate: 360, repeat: -1, duration: 9, ease: "none", paused: true },
     );
     asteriskTl
       .fromTo(
@@ -32,7 +32,7 @@ const Decor: FC = () => {
           onComplete: () => {
             asteriskLoop.play();
           },
-        }
+        },
       )
       .fromTo(
         ".asterisk2",
@@ -46,7 +46,7 @@ const Decor: FC = () => {
           onComplete: () => {
             asteriskLoop.play();
           },
-        }
+        },
       )
       .fromTo(
         ".asterisk3",
@@ -60,27 +60,27 @@ const Decor: FC = () => {
           onComplete: () => {
             asteriskLoop.play();
           },
-        }
+        },
       );
   });
 
   return (
-    <div className="w-full h-full relative">
-      <div
-        className={`${against.className} asterisk1 loopthis top-52 right-64 flex justify-center text-center absolute text-9xl h-[90px]`}
+    <div className="relative h-full w-full">
+      <p
+        className={`${against.className} asterisk1 loopthis absolute right-64 top-52 flex h-[40px] justify-center text-center text-6xl lg:h-[90px] lg:text-9xl`}
       >
         *
-      </div>
-      <div
-        className={`${against.className} asterisk2 loopthis top-64 right-96 flex justify-center text-center absolute text-9xl h-[90px]`}
+      </p>
+      <p
+        className={`${against.className} asterisk2 loopthis absolute left-80 top-64 flex h-[40px] justify-center text-center text-6xl lg:top-12 lg:h-[90px] lg:text-9xl`}
       >
         *
-      </div>
-      <div
-        className={`${against.className} asterisk3 loopthis bottom-52 right-48 flex justify-center text-center absolute text-9xl h-[90px]`}
+      </p>
+      <p
+        className={`${against.className} asterisk3 loopthis absolute bottom-52 right-48 flex h-[40px] justify-center text-center text-6xl lg:h-[90px] lg:text-9xl`}
       >
         *
-      </div>
+      </p>
     </div>
   );
 };
