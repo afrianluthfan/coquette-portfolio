@@ -18,6 +18,16 @@ const Decor: FC = () => {
       { rotate: 0 },
       { rotate: 360, repeat: -1, duration: 9, ease: "none", paused: true },
     );
+    let asteriskSymbol = document.querySelectorAll(".loopthis");
+    asteriskSymbol.forEach((symbol) => {
+      symbol.addEventListener("mouseenter", () => {
+        asteriskLoop.timeScale(4).play();
+      });
+      symbol.addEventListener("mouseleave", () => {
+        asteriskLoop.timeScale(1).play();
+      });
+    });
+
     asteriskTl
       .fromTo(
         ".asterisk1",

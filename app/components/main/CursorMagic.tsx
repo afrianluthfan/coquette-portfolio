@@ -48,18 +48,18 @@ const CursorMagic: FC = () => {
 
     tl.fromTo(
       `.cursor${symbolsIndex}`,
-      { opacity: 0, x: 0 },
-      { opacity: 1, x: -100 },
+      { opacity: 0, x: -100 },
+      { opacity: 1, x: 0, ease: "bounce", duration: 0.3 },
     );
     tl.fromTo(
       `.cursor${symbolsIndex}`,
       { rotate: 0 },
-      { rotate: 270, ease: "bounce" },
+      { rotate: 270, ease: "bounce", duration: 0.3 },
     );
     tl.fromTo(
       `.cursor${symbolsIndex}`,
       { y: 0, opacity: 1 },
-      { y: 1000, opacity: 0 },
+      { y: 1000, opacity: 0, duration: 1.5 },
     );
   }, [symbolsIndex]);
 
@@ -143,12 +143,12 @@ const CursorMagic: FC = () => {
 
   return (
     <div
-      className="absolute flex h-screen w-full items-center justify-center overflow-hidden bg-none"
+      className="absolute hidden h-screen w-[calc(100vw/8)] items-center justify-center overflow-hidden bg-none lg:flex"
       ref={ref}
     >
       <p
         key={symbolsIndex}
-        className={`${against.className} cursor${symbolsIndex} text-8xl opacity-0`}
+        className={`${against.className} cursor${symbolsIndex} text-4xl opacity-0`}
       >
         {symbolsList[symbolsIndex]}
       </p>
